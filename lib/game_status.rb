@@ -15,10 +15,17 @@ WIN_COMBINATIONS = [
   [6,4,2]
 ]
 
-def won? (board)
+# def won? (board)
+#
+#   if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
+#     "X won in the top row"
+# if board[WIN_COMBINATIONS[0]]
+#
+# end
 
-  if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-    "X won in the top row"
-if board[WIN_COMBINATIONS[0]] 
+top_row_win = [0,1,2]
 
+# Check if each index in the top_row_win array contains an "X"
+if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
+  "X won in the top row"
 end
